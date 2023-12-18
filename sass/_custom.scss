@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.imagem {
+
+    &-projeto {
+        width: 100%;
+    }
+
+    &-principal {
+        max-height: 460px;
+        max-width: 460px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+nav {
+    padding: 1.5rem 0;
+    color: #fafafa;
+
+    .nav-link {
+        color: #fff;
+
+        &:hover {
+            background-color: #c0f64d;
+        }
+    }
+
+    .navbar-text {
+        color: #c0f64d;
+    }
+
+    .navbar-toggler {
+        background-color: #C0F64D;
+    }
+}
+
+@mixin titulo {
+    color: #fff;
+    font-size: 80px;
+    line-height: 97px;
+    font-weight: bold;
+}
+
+.destaque {
+    padding: 3rem 0;
+
+    h1 {
+        @include titulo;
+    }
+
+    p {
+        color: #7E7E7E;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.servicos {
+    padding: 3rem 0;
+
+    h1 {
+        @include titulo;
+        color: #000;
+    }
+    p {
+        color: #000;
+    }
+    h2 {
+        color: #000;
+    }
+}
+
+.skills {
+    padding: 5rem 0;
+
+    h2 {
+        @include titulo;
+    }
+}
+
+.projetos {
+    color: #000;
+    padding: 5rem 0;
+
+    h2 {
+        @include titulo;
+        font-size: 48px;
+        line-height: 56px;
+        padding-bottom: 2rem;
+        color: #000;
+    }
+    h3 {
+        padding: 1rem 0;
+        color: #000;
+    }
+}
+
+.contato {
+    padding: 5rem 0;
+
+    h1 {
+        @include titulo;
+    }
+    p {
+        color: #7e7e7e;
+    }
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: #22283D;
+}
